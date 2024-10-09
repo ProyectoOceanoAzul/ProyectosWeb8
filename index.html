@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido -->
+    <meta http-equiv="refresh" content="10" />
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <script src="https://kit.fontawesome.com/2ad58faca7.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Maquetacion</title>
+
+</head>
+
+
+<body>
+
+    <div class="contenedor__header">
+
+        <!-- superuior-->
+        <div class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <h1 class="superior__logo">
+                    Orananjado
+                </h1>
+
+            </div>
+
+        </div>
+
+
+        <!-- banner -->
+        <div class="contenedor__banner">
+
+            <div class="contenedor">
+
+                <!-- banner imagen-->
+                <div class="banner__imagen">
+                    <img src="./imagenes/showcase.jpg" alt="showcase" title="showcase">
+                </div>
+
+
+                <!-- banner textos-->
+                <div class="banner__textos">
+
+                    <h2 class="banner__titulo">
+                        This is your website
+                    </h2>
+
+                    <p class="banner__parrafo1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates rem accusantium nihil,
+                        laboriosam nam corrupti praesentium dicta numquam dolorum mollitia inventore, alias rerum quas.
+                    </p>
+
+                    <p class="banner__parrafo2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsum nesciunt excepturi facere
+                        eaque odit, explicabo quisquam expedita? Velit est reiciendis mollitia labore quidem! Error?
+                    </p>
+
+
+                    <a href="#" class="btn btn-light">press here</a>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- about -->
+    <div class="contenedor__about">
+        <div class="contenedor">
+
+            <div class="about_textos">
+
+                <p class="about__parrafo1">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatum commodi!
+                    Unde iure vitae
+                    magnam nesciunt.
+                </p>
+
+                <p class="about__parrafo2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- contact -->
+    <div class="contenedor__contact">
+
+        <div class="contenedor">
+
+            <div class="contact__formulario">
+
+                <form action="#" class="post">
+
+                    <div class="form__group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form__control">
+                    </div>
+
+
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="form__control">
+                    </div>
+
+
+                    <div class="form__group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="10" cols="30" class="form__control">
+
+                        </textarea>
+                    </div>
+
+
+                    <button class="btn btn-naranja">Submit</button>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

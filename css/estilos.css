@@ -1,0 +1,374 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+
+
+    /*
+        outline: 1px solid red;
+    */
+
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--colorFondoBody);
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth scroll;
+
+}
+
+
+/*Estilos generales*/
+:root{
+    --colorFondoBody: #5c56ac;
+    --colorCabecera: #ee8731;
+    --colorEstilos:#847cf6;
+    --colorTexto: #ecdffd;
+    --colorSecundario: #343162;
+
+}
+
+
+h1{
+    font-size: 2.5rem;
+    color: var(--colorTexto);
+}
+
+h2{
+    font-size: 2.5rem;
+    color: var(--colorTexto);
+}
+
+
+p{
+    text-align: justify;
+    color: var(--colorTexto);
+
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 10px 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+/************************************/
+/*CONTENEDOR general*/
+div.contenedor{
+    max-width: 1300px;  /*max-width     se ajusta ala pantalla cuando se reduce*/
+    margin: auto;
+    padding: 0 10px;
+
+    overflow: auto;     /* recortar el conteniedo sobrabte automanticamente */
+    
+}
+
+
+
+/************************************/
+/*CONTENEDOR superior  logo y menu*/
+div.contenedor__superior{
+    background-color: var(--colorCabecera);
+
+
+    overflow: auto;
+    padding: 20px 0;
+}
+
+
+h1.superior__logo{
+    color: #000;
+
+    float: left;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+
+/************************************/
+/*CONTENEDOR banner*/
+
+div.contenedor__banner{
+    background-color: var(--colorCabecera);
+
+    padding: 90px 0;
+}
+
+div.banner__imagen{
+    float: left;
+    width: 50%;
+    padding: 20px;
+
+}
+
+div.banner__imagen img{
+    width: 100%;
+
+
+    /*************** ojo*/
+    padding-top: 20px;
+    padding-right: 40px;
+    /*************** ojo*/
+}
+
+
+div.banner__textos{
+    float: right;
+    width: 50%;
+}
+
+div.banner__textos h2.banner__titulo{
+    padding-top: 30px;
+
+    font-size: 6rem;
+}
+
+
+div.banner__textos p.banner__parrafo1{
+    font-weight: bold;
+    padding: 10px 0;
+
+    font-size: 1.25rem; /***************** tamañpo parrafo **/
+    color: #000;
+}
+
+
+div.banner__textos p.banner__parrafo2{
+    padding: 10px 0;
+
+    color: var(--colorTexto);
+}
+
+
+/*Usamos para los dos botones */
+.btn{
+    font-size: 15px;
+    display: inline-block;
+
+    padding: 12px 32px;
+
+    border-radius: 5px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+a.btn-light{
+    background-color: var(--colorTexto);
+    color: #000;
+}
+
+a.btn-light:hover{
+    background-color: #B7B7B7;
+    font-weight: bold;
+}
+
+
+
+div.banner__textos a{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/************************************/
+/*CONTENEDOR about*/
+
+div.contenedor__about{
+    background-color: var(--colorTexto);
+    padding: 90px 0;
+}
+
+
+p.about__parrafo1{
+    color: #000;
+    font-size: 56px;
+    font-weight: 900;
+    
+    line-height: 5rem;
+
+}
+
+
+p.about__parrafo2{
+    color: var(--colorCabecera);
+    font-size: 56px;
+    font-weight: 900;
+
+    padding: 40px 0;
+    line-height: 5rem;
+
+}
+
+
+
+/************************************/
+/*CONTENEDOR contact*/
+
+div.contenedor__contact{
+    background-color: #000;
+
+    padding: 100px 0 80px 0;
+}
+
+
+div.contact__formulario{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+/********************/
+/*Formulario*/
+form div.form__group{
+    margin-bottom: 1rem;
+}
+
+form div.form__group label{
+    display: inline-block;
+    margin-bottom: 1rem;    /************** 0.5 */
+
+    color: var(--colorTexto);
+    text-transform: uppercase;
+}
+
+
+form div.form__group .form__control{
+    width: 100%;
+    display: block;
+
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    line-height: 1.5;
+
+    border: 1px solid var(--colorTexto);
+    background-color: var(--colorTexto);
+    background-clip: padding-box;
+    color: #495057;
+
+}
+
+
+button.btn-naranja{
+    background-color: var(--colorCabecera);
+    color: var(--colorTexto);
+    border: none;
+
+    width: 100%;
+}
+
+button.btn-naranja:hover{
+    background-color: #FF6500;
+}
+
+
+
+/********************/
+/*Responsive:  cuando la pantalla sea menos de 768px */
+@media(max-width:768px) {
+
+    
+    div.banner__textos h2.banner__titulo{
+    font-size: 4rem;
+    }
+
+
+    div.contenedor__superior{
+        text-align: center;
+    }
+
+    h1.superior__logo{
+        float: none;
+        padding-top: 20px;
+    }
+
+
+    div.contenedor__banner{
+        padding: 20px 20px 40px 20px;
+    }
+
+
+    div.banner__imagen{
+        float: none;
+        width: 100%;
+
+        padding: 10px;
+    }
+
+
+    div.banner__imagen img{
+        padding: 10px;
+    }
+
+    div.banner__textos{
+        float: none;
+        width: 100%;
+
+        padding: 10px;
+    }
+
+
+
+    div.contenedor__about{
+        padding: 20px;
+    }
+
+
+    div.about_textos p{
+        font-size: 30px;
+        line-height: 3rem;
+    }
+
+
+    div.contenedor__contact{
+        padding: 50px 0 20px 0;
+    }
+
+    div.contact__formulario{
+        width: 90%;
+    }
+
+
+
+
+}
+
+
+
